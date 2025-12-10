@@ -1,0 +1,94 @@
+/* General layout */
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Header flexbox */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: navy;
+    font-size: 1.1rem;
+}
+
+/* Main content grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Article and sidebars */
+.article, .sidebar, .extra {
+    background-color: white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Floating image with text wrap */
+.float-image {
+    float: left;
+    width: 15rem;
+    margin-right: 1rem;
+    border: 3px solid black;
+}
+
+.article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer with flexbox */
+.site-footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .float-image {
+        float: none;
+        width: 100percent;
+        margin: 0 0 1rem 0;
+    }
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .site-title {
+        font-size: 1.6rem;
+    }
+}
