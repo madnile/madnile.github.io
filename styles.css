@@ -116,7 +116,7 @@ footer {
   cursor: pointer;
 }
 .slideshow-container {
-  max-width: 900px;
+  max-width: 400px;
   margin: 2rem auto;
   text-align: center;
 }
