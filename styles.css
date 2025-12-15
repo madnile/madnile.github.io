@@ -88,7 +88,7 @@ footer {
 }
 
 .slide {
-  width: 100%;
+  width: 50%;
   display: none;
   border-radius: 12px;
   opacity: 0;
@@ -123,12 +123,12 @@ footer {
 
 .slide {
 .slideshow-container {
-  max-width: 700px;
+  max-width: 400px;
   margin: 2rem auto;
 }
 
 .slide {
-  width: 100%;
+  width: 50%;
   height: 420px;
   object-fit: cover;
   border-radius: 12px;
